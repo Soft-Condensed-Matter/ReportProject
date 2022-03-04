@@ -1,0 +1,77 @@
+\documentclass[letterpaper,12pt,oneside]{book}
+%\usepackage[a4paper,includeall,bindingoffset=0cm,margin=2cm,marginparsep=0cm,marginparwidth=0cm]{geometry}
+\usepackage[top=1in, left=0.9in, right=1.25in, bottom=1in]{geometry}
+\usepackage{ThesisITL}
+\usepackage{xcolor}
+\usepackage[utf8]{inputenc}
+\usepackage{url}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,es-nodecimaldot,es-tabla]{babel}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{tocloft}
+\graphicspath{{./Images/}}
+\usepackage{setspace}
+\usepackage{comment}
+\usepackage{hyperref}
+\urlstyle{same}
+\hypersetup{
+   colorlinks=true,
+   urlcolor=blue,
+   linkcolor=black,
+   citecolor=black,
+   filecolor=magenta,
+   pdftitle={Sharelatex Example},
+   pdfpagemode=FullScreen,
+}
+
+
+%\usepackage{anysize} 			% Para personalizar el ancho de  los márgenes
+%\marginsize{3cm}{3cm}{2cm}{2cm} % Izquierda, derecha, arriba, abajo
+%
+%\usepackage{appendix}
+%\renewcommand{\appendixname}{Apéndices}
+%\renewcommand{\appendixtocname}{Apéndices}
+%\renewcommand{\appendixpagename}{Apéndices} 
+
+
+%%% Include code 
+\usepackage{listings}
+\usepackage{color}
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+	language=C,
+	aboveskip=3mm,
+	belowskip=3mm,
+	showstringspaces=false,
+	columns=flexible,
+	basicstyle={\small\ttfamily},
+	numbers=none,
+	numberstyle=\tiny\color{gray},
+	keywordstyle=\color{blue},
+	commentstyle=\color{dkgreen},
+	stringstyle=\color{mauve},
+	breaklines=true,
+	breakatwhitespace=true,
+	tabsize=3
+}
+
+\begin{document}
+%%Presentación del documento	
+\include{Portada/portada}
+\include{Portada/frontmater}
+\include{Chap1/Intro}
+
+%%Contenido del manuscrito
+\include{Chap2/chap2}
+\include{Chap3/chap3}
+\include{Chap4/chap4}
+
+%% Bibliografia
+\bibliographystyle{IEEEtran}
+\bibliography{References/predoc.bib}
+
+\end{document}

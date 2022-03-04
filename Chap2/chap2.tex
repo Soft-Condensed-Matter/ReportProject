@@ -1,0 +1,38 @@
+\chapter{Marco teórico}
+
+\section{Nombre de la sección 1}
+La aproximación teórica \cite{Bloomfield1935} se puede emplear para caracterizar problemas que involucran \cite{Traugott1990}...
+
+\section{Nombre de la sección 2}
+Así podemos incluir una figura en el manuscrito y hacer referencia a ella \ref{Fig:01}. El índice de figuras se crea en automático
+
+\begin{figure}[htp!]
+	\centering
+	\includegraphics[width=7cm,height=5cm]{itl-logo.png}
+	\caption{Pie de figura con un texto corto y descriptivo.}
+	\label{Fig:01}
+\end{figure}
+
+\subsection{Nombre de la subsección 2.1}
+Así podemos incluir código dentro del manuscrito:\\
+\begin{lstlisting}
+	// Hello.c
+	#include <stdio.h>
+	#include <math.h>
+	
+	int main(){
+	float a;
+	float b;
+	float c;	
+	int i;
+	
+	for(i=1;i<=100;i++){
+		a=(float)i;
+		b=pow((float)i,2);		
+		c=a + b;
+	}
+
+	return 0;
+    }
+\end{lstlisting}
+
